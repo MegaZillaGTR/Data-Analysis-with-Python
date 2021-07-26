@@ -1,0 +1,27 @@
+$ ipython
+Python 2.7.6 (default, Mar 22 2014, 22:59:56)
+Type "copyright", "credits" or "license" for more information.
+
+IPython 2.3.0 -- An enhanced Interactive Python.
+?         -> Introduction and overview of IPython's features.
+%quickref -> Quick reference.
+help      -> Python's own help system.
+object?   -> Details about 'object', use 'object??' for extra details.
+
+In [1]: import pprint
+
+In [2]: pprint.pprint(zip(('Byte', 'KByte', 'MByte', 'GByte', 'TByte'), (1 << 10*i for i in xrange(5))))
+[('Byte', 1),
+ ('KByte', 1024),
+ ('MByte', 1048576),
+ ('GByte', 1073741824),
+ ('TByte', 1099511627776)]
+
+In [3]: help(pprint)
+
+
+In [4]: pprint.
+pprint.PrettyPrinter  pprint.isrecursive    pprint.pprint         pprint.warnings
+pprint.isreadable     pprint.pformat        pprint.saferepr
+
+In [4]: pprint.
